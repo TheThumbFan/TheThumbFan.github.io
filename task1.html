@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Галерея рецептів</title>
+  <link rel="stylesheet" href="task1.css" />
+</head>
+<body>
+  <header>
+    <h1>Галерея рецептів</h1>
+  </header>
+
+  <section class="page">
+    <input type="radio" name="type" id="type-all" class="vis" checked />
+    <input type="radio" name="type" id="type-cookie" class="vis" />
+    <input type="radio" name="type" id="type-muffin" class="vis" />
+    <input type="radio" name="type" id="type-roll" class="vis" />
+    <input type="radio" name="type" id="type-cake" class="vis" />
+
+    <input type="radio" name="cal" id="cal-all" class="vis" checked />
+    <input type="radio" name="cal" id="cal-400" class="vis" />
+    <input type="radio" name="cal" id="cal-500" class="vis" />
+    <input type="radio" name="cal" id="cal-600" class="vis" />
+
+    <div class="filters">
+      <div class="filter-group">
+        <span class="filter-title">Тип десерту:</span>
+        <label for="type-all">Усі</label>
+        <label for="type-cookie">Печиво</label>
+        <label for="type-muffin">Кекси</label>
+        <label for="type-roll">Рулети</label>
+        <label for="type-cake">Торти</label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-title">Калорійність:</span>
+        <label for="cal-all">Усі</label>
+        <label for="cal-400">≤ 400</label>
+        <label for="cal-500">≤ 500</label>
+        <label for="cal-600">≤ 600</label>
+      </div>
+    </div>
+
+    <main class="gallery">
+      <div class="card" data-type="cookie" data-cal="320">
+        <img src="Печиво.jpg" alt="Печиво" />
+        <h3>Печиво</h3>
+        <p>Калорійність: 320 ккал</p>
+      </div>
+      <div class="card" data-type="cookie" data-cal="290">
+        <img src="Печиво2.jpg" alt="Печиво 2" />
+        <h3>Печиво 2</h3>
+        <p>Калорійність: 290 ккал</p>
+      </div>
+
+      <div class="card" data-type="muffin" data-cal="410">
+        <img src="Мафін.jpg" alt="Мафін" />
+        <h3>Мафін</h3>
+        <p>Калорійність: 410 ккал</p>
+      </div>
+      <div class="card" data-type="muffin" data-cal="380">
+        <img src="Кекси.png" alt="Кекси" />
+        <h3>Кекси</h3>
+        <p>Калорійність: 380 ккал</p>
+      </div>
+
+      <div class="card" data-type="roll" data-cal="450">
+        <img src="Рулет.jpg" alt="Рулет" />
+        <h3>Рулет</h3>
+        <p>Калорійність: 450 ккал</p>
+      </div>
+      <div class="card" data-type="roll" data-cal="470">
+        <img src="Рулет_Мол.jpg" alt="Рулет Молочний" />
+        <h3>Рулет Молочний</h3>
+        <p>Калорійність: 450 ккал</p>
+      </div>
+
+      <div class="card" data-type="cake" data-cal="520">
+        <img src="Торт.jpg" alt="Київський торт" />
+        <h3>Торт</h3>
+        <p>Калорійність: 520 ккал</p>
+      </div>
+      <div class="card" data-type="cake" data-cal="540">
+        <img src="Наполеон.jpg" alt="Наполеон" />
+        <h3>Наполеон</h3>
+        <p>Калорійність: 550 ккал</p>
+      </div>
+    </main>
+  </section>
+</body>
+</html>
